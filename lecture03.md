@@ -156,6 +156,7 @@ $ docker system prune -a
 
 ## 遭遇したエラー
 1. 「rails s」で起動時「Can't connect to local MySQL server through socket '/tmp/mysql.sock' (13)」が発生
+![エラー1つ目（第3回課題）](https://user-images.githubusercontent.com/100008521/192686945-ee737818-5799-4495-b309-8d6915ec29f1.png)
 
 →「database.yml」のコードをいじる必要ある
 
