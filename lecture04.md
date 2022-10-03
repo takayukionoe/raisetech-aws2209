@@ -193,4 +193,3 @@ DBにログインができました！
 
 [AWS]EC2からプライベートサブネットのRDSへ接続する
 https://zenn.dev/shake_sanma/articles/5b3e12bf7f558d
-
