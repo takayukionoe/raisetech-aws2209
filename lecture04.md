@@ -16,6 +16,9 @@
 - VSCodeでSSH接続
 - RDSとEC2の接続
 
+## 構成図
+![raisetech_4th_aws](https://user-images.githubusercontent.com/100008521/193780723-6cfaf15c-5ab3-419f-a1d5-071a25365b0b.png)
+
  ### 1. VPCの立ち上げ
 
 
