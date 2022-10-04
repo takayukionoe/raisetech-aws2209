@@ -168,8 +168,7 @@ $ mysql -u admin -p -h <RDSのエンドポイントを張り付け>
 ‘’’
 
 DBにログインができました！
-〜〜画像〜〜〜
-
+![第4回課題完了画面](https://user-images.githubusercontent.com/100008521/193734324-bd95f000-e6d6-4b28-9033-bf056c624246.png)
 
 
 ## ■つまづいたところ
