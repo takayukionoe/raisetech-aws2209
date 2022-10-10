@@ -206,6 +206,6 @@ rails s
 docker system prune -a
 ```
 
-## Qiitaにも手順をまとめている
+## Qiitaにも手順をまとめているよ
 
 [GitHubとCloud9の連携方法とpushの実行までの全手順]((https://qiita.com/saunadaisuki/private/af8b40e2ef391bfaa840)
