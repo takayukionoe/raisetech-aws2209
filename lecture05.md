@@ -13,18 +13,19 @@
 
 
 ## ■目次
-①. WS上での環境構築（VPC・EC2・RDSの設定）
-②. ターミナル（VSCode）での環境構築（組み込みサーバ
-③. ターミナル（VSCode）での環境構築（WebサーバーとAppサーバー編）
-④. 3の追加
-⑤. 構成図
-⑥. よく使ったコマンド集
-⑦. 宿題
+1. AWS上での環境構築（VPC・EC2・RDSの設定）
+2. ターミナル（VSCode）での環境構築（組み込みサーバー編）
+3. ターミナル（VSCode）での環境構築（WebサーバーとAppサーバー編）
+4. ELB（ALB）の追加 ・AWSマネジメントコンソールからEC2→ロードバランサーを選ぶ
+5. S3の追加
+6. 構成図
+7. よく使ったコマンド集
+8. 宿題
 
 
 ## ■作業内容
 
- - ①AWS上での環境構築（VPC・EC2・RDSの設定）
+###  ①AWS上での環境構築（VPC・EC2・RDSの設定）
 
 1-1. VPCの作成
 
@@ -54,7 +55,7 @@
 
 
 
- - ②ターミナル（VSCode）での環境構築（組み込みサーバー編）
+###  ②ターミナル（VSCode）での環境構築（組み込みサーバー編）
 ```
 ・yumアップデート
 sudo yum update -y
@@ -157,7 +158,7 @@ RAILS_ENV=production bundle exec rails server
 ![第5回課題_組み込みサーバーでの接続確認](https://user-images.githubusercontent.com/100008521/201287271-960a76b9-2931-4c15-bbbb-cd447f8bbbe6.png)
 
 
- - ③ターミナル（VSCode）での環境構築（WebサーバーとAppサーバー編）
+###  ③ターミナル（VSCode）での環境構築（WebサーバーとAppサーバー編）
 
 ▼講義メモ
 ・ウェブ3層構造は理科した方がいい
@@ -329,7 +330,7 @@ sudo systemctl start nginx
 ![【第5回課題」Unicorn + Nginxで動いた図](https://user-images.githubusercontent.com/100008521/201287564-358ef4a8-4794-4896-90ea-c397de167583.png)
 
 
- - ③ELB（ALB）の追加
+### ④ELB（ALB）の追加
 ・AWSマネジメントコンソールからEC2→ロードバランサーを選ぶ
 
 ・Application Load Balancerを選択
@@ -342,7 +343,7 @@ sudo systemctl start nginx
 ![【第5回課題】ELBで挙動確認](https://user-images.githubusercontent.com/100008521/201287695-7b75a204-232f-4843-b2f3-70c38ab74514.png)
 
 
- - ④S3の追加
+### ⑤S3の追加
 
 ・vpcflowlogのデータログをエビデンスとして提出します
 ※S3に画像データを追加してのエビデンス提出予定でしたが、根が深そうなエラーが発生したので、こちらで提出いたします
@@ -351,11 +352,11 @@ sudo systemctl start nginx
 
 
 
- - ⑤構成図
+### ⑥構成図
  ![aws_8th drawing](https://user-images.githubusercontent.com/100008521/201287974-5b28b993-fbc4-4dd2-9a79-f9f2d0695f2a.png)
 
 
- - ⑥よく使ったコマンド集
+### ⑦よく使ったコマンド集
 
 ・errorlogの確認コマンド（何回確認したか。。。）
 ```
@@ -368,7 +369,7 @@ tail -f nginx/error.log
 sudo vim /etc/nginx/nginx.conf
 ```
 
- - ⑦宿題
+### ⑧宿題
 
 
 ・開発環境でのWebサーバー・アプリサーバーを使ってのデプロイ（組み込みサーバーだけはできた）
