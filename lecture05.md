@@ -119,7 +119,7 @@ show databases;
 →データベース確認できる
 ```
 
-・ギットクローン
+・git clone
 
 ```
 git clone https://github.com/yuta-ushijima/raisetech-live8-sample-app.git
@@ -140,7 +140,7 @@ EDITOR="vi" bin/rails master.key:edit
 EDITOR=vim bundle exec rails credentials:edit
 ```
 
-・ツールの圧縮
+・Javascriptをビルドするためのツールのインストール
 ```
 bundle exec rails webpacker:install
 ```
@@ -150,7 +150,7 @@ bundle exec rails webpacker:install
 bundle exec rails assets:precompile RAILS_ENV=production
 ```
 
-・アプリのデプロイ
+・railsの本番環境における組み込みサーバーの起動コマンド
 ```
 RAILS_ENV=production bundle exec rails server
 ```
@@ -170,27 +170,27 @@ EDITOR="vi" bin/rails masterkey:edit
 ```
 ○nginxのインストール
 
-・エンジンエックスのインストール
+・Nginxのインストール
 ```
 sudo amazon-linux-extras info nginx1
 ```
 ※amazon-linux-extras用のコマンド
 
-・エンジンエックスのインストール
+・Nginxのインストール
 ```
 sudo amazon-linux-extras install -y nginx1
 ```
 
-・エンジンエックスのバージョン確認
+・Nginxのバージョン確認
 ```
 nginx -v
 ```
 
-・エンジンエックスの格納先の確認
+・Nginxの格納先の確認
 ```
 ls /etc
 ```
-・エンジンエックス配下のファイルの確認
+・Nginx配下のファイルの確認
 ```
 ls /etc/nginx
 ```
@@ -218,7 +218,7 @@ sudo systemctl status nginx
 sudo systemctl start nginx
 ```
 
-○unicornのインストール
+○unicornの起動
 
 ```
 bundle exec unicorn -c config/unicorn.rb -E production -D
@@ -375,3 +375,7 @@ sudo vim /etc/nginx/nginx.conf
 ・開発環境でのWebサーバー・アプリサーバーを使ってのデプロイ（組み込みサーバーだけはできた）
 
 ・S3の別の使い方（ALBのログをためる）
+
+・ApacheとNginxの違いを調査（牛島さんからのアドバイス）
+
+・「bundle exec unicorn -c config/unicorn.rb -E production -D」の「-D」は、バックグラウンドでの起動といい、なぜそのように動くのか調査
