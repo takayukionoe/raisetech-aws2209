@@ -46,16 +46,15 @@ AWS Internal
 
 ### ■Railsアプリ起動時のメール通知とCloudWatch画面
 
-![【第6回課題】アプリ起動時のアラームOK画面](https://user-images.githubusercontent.com/100008521/203298647-95fef2af-6677-42a5-9c4c-2c9c12606dca.png)
+![【第6回課題】アプリ起動時のCloudwatch画面※修正](https://user-images.githubusercontent.com/100008521/203941681-686a32e2-93c9-4576-b280-0008c7d4511d.png)
 
-![【第6回課題】アプリ起動時のCloudwatch画面](https://user-images.githubusercontent.com/100008521/203298657-3c77c87b-c1a5-4a02-ad2b-217ae35c7c39.png)
+![【第6回課題】アプリ起動時のアラームOK画面※修正](https://user-images.githubusercontent.com/100008521/203941719-0ec1ef52-68e9-402e-bbab-f5925d32f154.png)
 
 ### ■Railsアプリ停止時のメール通知とCloudWatch画面
 
-![【第6回課題】アプリ停止時のCloudwatch画面](https://user-images.githubusercontent.com/100008521/203298789-6a1f6754-5b43-4602-a115-9273b98facca.png)
+![【第6回課題】アプリ停止時のCloudwatch画面※修正](https://user-images.githubusercontent.com/100008521/203941735-631ed4a4-fb9c-4afb-9801-d1f10e7f9185.png)
 
-![【第6回課題】アプリ停止時のアラームALARM画面](https://user-images.githubusercontent.com/100008521/203298808-c9e747d0-3e73-47d5-8d2f-e051e320ff17.png)
-
+![【第6回課題】アプリ停止時のアラームALARM画面※修正](https://user-images.githubusercontent.com/100008521/203941751-0c20bf68-c3e5-436a-aa01-e633cb7c1b8b.png)
 
 ## 3. AWS 利用料の見積作成
 
