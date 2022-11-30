@@ -56,6 +56,16 @@ AWS Internal
 
 ![【第6回課題】アプリ停止時のアラームALARM画面※修正](https://user-images.githubusercontent.com/100008521/203941751-0c20bf68-c3e5-436a-aa01-e633cb7c1b8b.png)
 
+## （追記）一つのアラームでOKとalarmの2つのアクションの通知設定もできる！
+
+添付画像の通知の追加から、追加可能
+![アラーム通知複数設定](https://user-images.githubusercontent.com/100008521/204814941-a7520966-69a2-42a3-8011-5719038d6096.png)
+
+これで、1つのアラームでOKとalarmの2つの通知が可能に
+
+
+
+
 ## 3. AWS 利用料の見積作成
 
 ■これまでの課題で使用してきたリソースは下記
