@@ -7,7 +7,6 @@
 ![aws_8th drawio (1)](https://user-images.githubusercontent.com/100008521/217277642-49a84b6a-6115-46eb-a60a-63de3779c924.png)
 
 
-
 ## ■目的
 * CloudFormationを使って、環境のコード化
 
