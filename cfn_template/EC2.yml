@@ -44,3 +44,4 @@ Outputs:
         Value: !Ref raisetech10thEC2
         Export:
             Name: !Sub "${AWS::StackName}-EC2ID"
+

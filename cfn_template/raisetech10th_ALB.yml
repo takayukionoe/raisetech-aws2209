@@ -51,3 +51,4 @@ Resources:
                 - TargetGroupArn: !Ref TargetGroupResource
                   Type: forward
             LoadBalancerArn: !Ref InternetALB
+
