@@ -54,14 +54,14 @@
     ```
     % rake spec
     ```
-    * ![lecture11_servespecテスト成功](https://user-images.githubusercontent.com/100008521/225051650-aeb5ad84-d459-4cc5-8276-a708a18044f3.png)
+    * ![lecture11_servespecテスト成功](img/lecture11_error.png)
         
 
 ---
 
 ## 遭遇したエラー
 * テスト実行後、テスト項目が全てエラーになる
-    *　![lecture11_遭遇エラー](https://user-images.githubusercontent.com/100008521/225051707-1c2241ff-6c4e-45e2-baf1-8ef8ea3a004c.png)
+    *　![lecture11_遭遇エラー](img/lecture11_error.png)
     *　上記でも記載したが「 serverspec-init」実行後、SSH接続を選んでしまったため、そもそも認証ができなかったと考えられる
     *  「2) Exec (local)」こちらを選ぶ
 
