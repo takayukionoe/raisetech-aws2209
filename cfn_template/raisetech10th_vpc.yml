@@ -1,6 +1,14 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: vpc/subnet/routetable/igw sample
 
+Parameters:
+  AvailabilityZoneA:
+    Description: Availability Zone A
+    Type: String
+  AvailabilityZoneB:
+    Description: Availability Zone B
+    Type: String
+
 Resources:
   myVPC02:
     Type: AWS::EC2::VPC
@@ -28,7 +36,7 @@ Resources:
   PublicSubnet01a:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref AvailabilityZoneA
       VpcId: !Ref myVPC02
       CidrBlock: 10.0.0.0/20
       Tags:
@@ -38,7 +46,7 @@ Resources:
   PublicSubnet01c:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref AvailabilityZoneB
       VpcId: !Ref myVPC02
       CidrBlock: 10.0.16.0/20
       Tags:
@@ -48,7 +56,7 @@ Resources:
   PrivateSubnet01a:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1a
+      AvailabilityZone: !Ref AvailabilityZoneA
       VpcId: !Ref myVPC02
       CidrBlock: 10.0.128.0/20
       Tags:
@@ -58,13 +66,13 @@ Resources:
   PrivateSubnet01c:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: ap-northeast-1c
+      AvailabilityZone: !Ref AvailabilityZoneB
       VpcId: !Ref myVPC02
       CidrBlock: 10.0.144.0/20
       Tags:
         - Key: Name
           Value: PrivateSubnet01c
-  
+          
   publicrouteTable:
     Type: AWS::EC2::RouteTable
     Properties:

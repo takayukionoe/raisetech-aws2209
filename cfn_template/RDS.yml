@@ -6,6 +6,8 @@ Parameters:
     DBMasterUserName:
         Default: admin
         Type: String
+        NoEcho: true
+
     DBMasterUserPassword:
         Default: Otlock4869
         Type: String
