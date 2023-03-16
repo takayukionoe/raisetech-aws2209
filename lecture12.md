@@ -53,9 +53,9 @@
 
 * エラー内容に対する修正方法
      1.  W2501 Parameter DBMasterUserPassword used as MasterUserPassword, therefore NoEcho should be Truecfn_template/RDS.yml:9:5
-     * このエラーは、DBMasterUserPassword パラメータが MasterUserPassword として使われているため、
-        NoEcho を True に設定する必要があるという警告です。NoEcho を True に設定することで、
-        パスワード情報が CloudFormation の出力やログに表示されないようになり、セキュリティが向上します。
+         * このエラーは、DBMasterUserPassword パラメータが MasterUserPassword として使われているため、
+            NoEcho を True に設定する必要があるという警告です。NoEcho を True に設定することで、
+            パスワード情報が CloudFormation の出力やログに表示されないようになり、セキュリティが向上します。
 
     2. W3010 Don't hardcode ap-northeast-1a for AvailabilityZones
     cfn_template/raisetech10th_vpc.yml:31:7
