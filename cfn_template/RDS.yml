@@ -11,8 +11,6 @@ Parameters:
     DBMasterUserPassword:
         Default: Otlock4869
         Type: String
-        NoEcho: 'true'
-        
     EngineVersion:
         Default: 8.0.28
         Type: String
