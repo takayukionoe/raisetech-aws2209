@@ -52,31 +52,27 @@
     ```
 
 * エラー内容に対する修正方法
+     1.  W2501 Parameter DBMasterUserPassword used as MasterUserPassword, therefore NoEcho should be Truecfn_template/RDS.yml:9:5
+     * このエラーは、DBMasterUserPassword パラメータが MasterUserPassword として使われているため、
+        NoEcho を True に設定する必要があるという警告です。NoEcho を True に設定することで、
+        パスワード情報が CloudFormation の出力やログに表示されないようになり、セキュリティが向上します。
 
-    　　```
-    　　1.  W2501 Parameter DBMasterUserPassword used as MasterUserPassword, therefore NoEcho should be True
-        cfn_template/RDS.yml:9:5
-        ```
-            * このエラーは、DBMasterUserPassword パラメータが MasterUserPassword として使われているため、
-            NoEcho を True に設定する必要があるという警告です。NoEcho を True に設定することで、
-            パスワード情報が CloudFormation の出力やログに表示されないようになり、セキュリティが向上します。
-        ```
-        2. W3010 Don't hardcode ap-northeast-1a for AvailabilityZones
-        cfn_template/raisetech10th_vpc.yml:31:7
-        
-        3. W3010 Don't hardcode ap-northeast-1c for AvailabilityZones
-        cfn_template/raisetech10th_vpc.yml:41:7
-        
-        4. W3010 Don't hardcode ap-northeast-1a for AvailabilityZones
-        cfn_template/raisetech10th_vpc.yml:51:7
-        
-        5. W3010 Don't hardcode ap-northeast-1c for AvailabilityZones
-        cfn_template/raisetech10th_vpc.yml:61:7
-        ```
-            * これらのエラーは、AvailabilityZones がハードコードされているという警告です。
-            ap-northeast-1a や ap-northeast-1c といった特定の可用性ゾーンを直接指定するのではなく、
-            パラメータやマッピングを使用して柔軟に可用性ゾーンを指定することが推奨されます。
-            これにより、テンプレートが他のリージョンや可用性ゾーンでも使いやすくなり、耐障害性が向上します。
+    2. W3010 Don't hardcode ap-northeast-1a for AvailabilityZones
+    cfn_template/raisetech10th_vpc.yml:31:7
+    
+    3. W3010 Don't hardcode ap-northeast-1c for AvailabilityZones
+    cfn_template/raisetech10th_vpc.yml:41:7
+    
+    4. W3010 Don't hardcode ap-northeast-1a for AvailabilityZones
+    cfn_template/raisetech10th_vpc.yml:51:7
+    
+    5. W3010 Don't hardcode ap-northeast-1c for AvailabilityZones
+    cfn_template/raisetech10th_vpc.yml:61:7
+    
+        * これらのエラーは、AvailabilityZones がハードコードされているという警告です。
+        ap-northeast-1a や ap-northeast-1c といった特定の可用性ゾーンを直接指定するのではなく、
+        パラメータやマッピングを使用して柔軟に可用性ゾーンを指定することが推奨されます。
+        これにより、テンプレートが他のリージョンや可用性ゾーンでも使いやすくなり、耐障害性が向上します。
 
          ```raisetech10th_vpc.yml
          Parameters:
@@ -136,19 +132,7 @@
      * ![エラー修正後の実行結果](img/lecture12_success.png)
 
 
-## 深掘りたいこと
-* Nginxではなく、pumaでの実行の際、下記のテスト項目がエラーになった
-  * 修正.
-    ```sample_spec.rb
-      describe command('curl http://127.0.0.1:#{listen_port}/_plugin/head/ -o /dev/null -w "%{http_code}\n" -s') do
-      its(:stdout) { should match /^200$/ }
-    end
-    ```
-
-* これはそもそもNginxが起動するためのテストで他のWebサーバーのテストで使えない可能性がありそう
-
----
-## 感じた事
+## 感想
 
 * UI/UXが優れているので、使いやすいツール
 * CloudFormationのテンプレートのチェック以外に何ができるか調査
