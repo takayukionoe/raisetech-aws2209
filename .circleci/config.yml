@@ -13,7 +13,7 @@ jobs:
     - run:
         name: run cfn-lint
         command: |
-          cfn-lint -i W3002 -t cloudformation/*.yml
+          cfn-lint -i W3002 -t cfn/*.yml
   build:
     executor: ansible-playbook/default        
     steps: 
