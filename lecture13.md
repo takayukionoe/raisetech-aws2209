@@ -38,11 +38,11 @@ $ serverspec-init
 *  .circleci/confing.ymlを修正（今回はcloudformationでインフラ構築、ansibleでインフラコードか、servespecでチェックを行う）[（confing.ymlはこちら）](https://github.com/takayukionoe/raisetech-aws2209/tree/lecture14th/.circleci)
 
 *  該当ブランチでプルリクをして、ビルドの成功を確認
-* ![ビルド成功画面](img/raisetech13th_CircleCIビルド成功画面.png)
+* ![ビルド成功画面](img/raisetech13th_CircleCI_built_success.png)
 
 
 ## 出会ったエラー
-* ![ansibleでSSh接続する際の接続の許可確認が求められる](img/raisetech13th_CircleCIビルド成功画面.png)
+* ![ansibleでSSh接続する際の接続の許可確認が求められる](img/raisetech13th_CircleCi_error1.png)
 
 * ansible.cfgで、「StrictHostKeyChecking=no」を定義すると解決した
 
