@@ -1,7 +1,9 @@
-# 第12回課題
+# 第13回課題
 
 ## ゴール
 * CircleCI上で、Cloudformation・ansible・serverspecのビルドの成功
+
+* ![ビルド成功画面](img/raisetech13th_CircleCI_built_success.png)
 
 ## 手順
 
